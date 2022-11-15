@@ -47,10 +47,8 @@ Feature transformation implies projecting the existing number of features onto a
 ### Hyperparameter Tuning
 The C parameter of SVM is a positive constant that introduces regularization, allowing some data points to be misclassified. The value of C corresponds to the penalty added for each misclassified observation, and the higher this value, the more the penalty is added and the more likely that our model will overfit. $\gamma$ (gamma) parameter controls the amount of influence two points have on each other during kernel trick. A higher gamma value will mean that data points need to be close to each other to be considered similar, and therefore more likely to cause overfitting. In our experiments, we used grid search for the following hyperparameters to determine at what values our model achieves the best performance:
 
-C: 
 $$\text{C} \in \lbrace 10^{-2}, 10^{-1}, 10^{0}, 10^{1} \rbrace$$
 
-Gamma:
 $$\gamma \in \lbrace \text{"scale"}, 10^{-3}, 10^{-2}, 10^{-1} \rbrace $$
 
 ## Experimental Results
