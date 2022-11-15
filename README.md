@@ -1,4 +1,4 @@
-# Binary Classification of High-dimensional Data using Support Vector Machines
+# Binary Classification of High-dimensional data using Support Vector Machines
 
 This project addresses the problem of binary classification on high-dimensional data. The data consists of 4608 features. 4096 of these were extracted from the fc7 activation layer of CaffeNet[^1] and the remaining 512 are gist features[^2]
 
@@ -66,14 +66,7 @@ Although ANOVA is not very sensitive to moderate deviations, it still assumes th
 
 [^1]: http://caffe.berkeleyvision.org
 [^2]: http://people.csail.mit.edu/torralba/courses/6.870/papers/IJCV01-Oliva-Torralba.pdf
-[^3]: Leon Bobrowski. Feature selection based on linear separabil-
-ity and a cpl criterion function. Task Quarterly, 8(2):183–192,
-2004.
-[^4]:Andreas Gr ̈unauer and Markus Vincze. Using dimension re-
-duction to improve the classification of high-dimensional data.
-arXiv preprint arXiv:1505.06907, 2015.
-[^5]:Mar ́ıa Jos ́e Blanca Mena, Rafael Alarc ́on Postigo, Jaume Ar-
-nau Gras, Roser Bono Cabr ́e, Rebecca Bendayan, et al. Non-
-normal data: Is anova still a valid option? Psicothema, 2017.
-2
+[^3]: Leon Bobrowski. Feature selection based on linear separability and a cpl criterion function. Task Quarterly, 8(2):183–192, 2004.
+[^4]:Andreas Gr ̈unauer and Markus Vincze. Using dimension reduction to improve the classification of high-dimensional data. arXiv preprint arXiv:1505.06907, 2015.
+[^5]:Mar ́ıa Jos ́e Blanca Mena, Rafael Alarc ́on Postigo, Jaume Arnau Gras, Roser Bono Cabr ́e, Rebecca Bendayan, et al. Non-normal data: Is anova still a valid option? Psicothema, 2017.2
 
