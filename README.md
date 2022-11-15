@@ -1,6 +1,6 @@
 # Binary Classification of High-dimensional data using Support Vector Machines
 
-This project addresses the problem of binary classification on high-dimensional data. The data consists of 4608 features. 4096 of these were extracted from the fc7 activation layer of CaffeNet[^1] and the remaining 512 are gist features[^2]
+The data consists of 4608 features. 4096 of these were extracted from the fc7 activation layer of CaffeNet[^1] and the remaining 512 are gist features[^2]
 
 ## Approach
 In our experiments, we used two variations of the Support Vector Machine classifier to determine which approach is best for a given task.
