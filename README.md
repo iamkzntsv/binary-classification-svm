@@ -32,7 +32,9 @@ The motivation for using this method is that since the number of features will b
 
 After that, we can plot the distribution of some of the features to better understand how the data is organized. Since we have two types of features, we choose 3 features from each category.
 
-FIGURE
+| ![hists.png](figures/hists.png) | 
+|:--:| 
+| Distributions of 6 randomly selected figures |
 
 It can be seen that the CNN features follow a skewed distribution with a peak at 0, with only a few observations taking on a higher value. The distribution of gist features is also left-skewed, but with a smaller standard deviation.
 
@@ -54,11 +56,16 @@ $$\gamma \in \lbrace \text{"scale"}, 10^{-3}, 10^{-2}, 10^{-1} \rbrace $$
 ## Experimental Results
 For our experiments we use 5-fold cross-validation to split our training dataset into 5 mutually exclusive subsets and test our model. The performance of the classifiers changes as the number of features/components increases. We see that the best performance for ANOVA is achieved with SVM-RBF when the number of features is $\approx 2300$.  SVM with linear kernel performs better when the number of features is higher, as expected, but its best result is still slightly worse than SVM-RBF. PCA shows several peaks and achieves about the same accuracy as ANOVA. For further experiments, we will use ANOVA to keep the data in its original format.
 
-FIGURE
+| ![dim_red.png](figures/dim_red.png) | 
+|:--:| 
+| ANOVA vs PCA for dimensionality reduction |
 
 We then use grid search to find the hyperparameters that provide the best performance for a given set of features. Our dataset also contains confidence scores that we can use as sample weights for the classifier. This means that for points with higher confidence, SVM will pay more emphasis to get these points right. We scaled the confidence scores by a factor of 2 to make the effect a bit more significant.
 
-FIGURE
+| ![hyperparams.png](figures/hyperparams.png) | 
+|:--:| 
+| Classifier performance on different sets of hyperparam-
+eters with and without confidence scores |
 
 ## Conclusion
 
