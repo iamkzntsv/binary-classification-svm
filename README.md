@@ -48,10 +48,10 @@ Feature transformation implies projecting the existing number of features onto a
 The C parameter of SVM is a positive constant that introduces regularization, allowing some data points to be misclassified. The value of C corresponds to the penalty added for each misclassified observation, and the higher this value, the more the penalty is added and the more likely that our model will overfit. $\gamma$ (gamma) parameter controls the amount of influence two points have on each other during kernel trick. A higher gamma value will mean that data points need to be close to each other to be considered similar, and therefore more likely to cause overfitting. In our experiments, we used grid search for the following hyperparameters to determine at what values our model achieves the best performance:
 
 C: 
-$$\text{C} \in {10^{-2}, 10^{-1}, 10^{0}, 10^{1}}$$
+$$\text{C} \in \lbrace 10^{-2}, 10^{-1}, 10^{0}, 10^{1} \rbrace$$
 
 Gamma:
-$$\gamma \in {\text{"scale"}, 10^{-3}, 10^{-2}, 10^{-1}}$$
+$$\gamma \in \lbrace \text{"scale"}, 10^{-3}, 10^{-2}, 10^{-1}} \rbrace $$
 
 ## Experimental Results
 For our experiments we use 5-fold cross-validation to split our training dataset into 5 mutually exclusive subsets and test our model. The performance of the classifiers changes as the number of features/components increases. We see that the best performance for ANOVA is achieved with SVM-RBF when the number of features is $\approx 2300$.  SVM with linear kernel performs better when the number of features is higher, as expected, but its best result is still slightly worse than SVM-RBF. PCA shows several peaks and achieves about the same accuracy as ANOVA. For further experiments, we will use ANOVA to keep the data in its original format.
